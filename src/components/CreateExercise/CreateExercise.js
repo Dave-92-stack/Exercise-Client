@@ -22,16 +22,16 @@ class CreateExercise extends Component {
     }
   }
 
-  handleChange = exercise => {
+  handleChange = event => {
     event.persist()
     this.setState(prevState => {
-      const updatedField = { [exercise.target.name]: exercise.target.value }
+      const updatedField = { [event.target.name]: event.target.value }
       const editedExercises = Object.assign({}, prevState.exercise, updatedField)
       return { exercise: editedExercises }
     })
   }
 
-  handleSubmit = exercise => {
+  handleSubmit = event => {
     event.preventDefault()
     const { msgAlert } = this.props
 
@@ -39,7 +39,7 @@ class CreateExercise extends Component {
       url: `${apiUrl}/exercises`,
       method: 'POST',
 
-      data: { exercise: this.state.exercise },
+      data: { exercise: this.state.event },
       headers: {
         'Authorization': `Token token=${this.state.user.token}`
       }
@@ -60,7 +60,7 @@ class CreateExercise extends Component {
   }
 
   render () {
-    const { createdId } = this.state
+    const { exercise, createdId } = this.state
     const { handleChange, handleSubmit } = this
 
     if (createdId) {
