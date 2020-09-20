@@ -7,5 +7,11 @@ export default {
   changePasswordSuccess: 'Password changed successfully!',
   changePasswordFailure: 'Failed to change passwords. Check your old password and try again.',
   createExerciseSuccess: 'You have successfully logged your daily exercise!',
-  createExerciseFailure: 'Failed to log your exercise.'
+  createExerciseFailure: 'Failed to log your exercise.',
+  myExercisesSuccess: 'Successfully loaded your exercises.',
+  myExercisesFailure: 'Failed to load your exercises.',
+  deleteExerciseSuccess: 'Successfully deleted exercise log.',
+  deleteExerciseFailure: 'Failed to delete exercise log.',
+  editExerciseSuccess: 'Successfully updated exercise log.',
+  editExerciseFailure: 'Failed to update exercise log.'
 }
