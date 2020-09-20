@@ -26,6 +26,7 @@ class CreateExercise extends Component {
     event.persist()
     this.setState(prevState => {
       const updatedField = { [event.target.name]: event.target.value }
+
       const editedExercises = Object.assign({}, prevState.exercise, updatedField)
       return { exercise: editedExercises }
     })
