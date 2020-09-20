@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import messages from '../AutoDismissAlert/messages'
-import ExerciseForm from '../EditForm/EditForm'
+import EditForm from '../EditForm/EditForm'
 
 class EditExercise extends Component {
   constructor (props) {
@@ -90,7 +90,7 @@ class EditExercise extends Component {
       return <Redirect to='/my-exercises' />
     }
     return (
-      <ExerciseForm
+      <EditForm
         exercise={exercise}
         handleDelete={handleDelete}
         handleChange={handleChange}

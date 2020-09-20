@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
-
+import Home from '../HomePage'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
@@ -45,6 +45,7 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' component={Home} />
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
@@ -63,7 +64,7 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/create-exercise' render={() => (
             <CreateExercise msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/exercises/:id' render={props => (
+          <AuthenticatedRoute user={user} path='/exercises/:id' render={(props) => (
             <EditExercise {...props} msgAlert={this.msgAlert} user={user} />
           )} />
         </main>

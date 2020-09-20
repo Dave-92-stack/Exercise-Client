@@ -45,7 +45,7 @@ class CreateExercise extends Component {
         'Authorization': `Token token=${this.state.user.token}`
       }
     })
-      .then(res => this.setState({ createdId: res.data.exercise._id }))
+      .then(res => this.setState({ createdId: res.data.event._id }))
       .then(() => msgAlert({
         heading: 'Exercise Logged!',
         message: messages.createExerciseSuccess,
