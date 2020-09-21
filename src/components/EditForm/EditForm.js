@@ -49,7 +49,7 @@ const EditForm = ({ exercise, handleSubmit, handleChange, handleDelete }) => {
             />
           </Form.Group>
           <Button varient="primary" type="submit">Submit</Button>
-          <Link to="/my-exercises">
+          <Button variant="warning" type="button" onClick={handleDelete}>Delete Log</Button><Link to="/my-exercises">
             <Button variant="secondary">Cancel</Button>
           </Link>
         </Form>
