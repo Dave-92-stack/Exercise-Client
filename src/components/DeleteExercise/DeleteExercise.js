@@ -18,7 +18,7 @@ class DeleteExercise extends Component {
       .then(res => this.setState({ exercise: res.data.exercise }))
       .catch(console.error)
   }
-  deleteExercise = () => {
+  destroyExercise = () => {
     const { msgAlert } = this.props
 
     axios({
@@ -42,7 +42,7 @@ class DeleteExercise extends Component {
     return (
       <div>
         <h4>{exercise.date}</h4>
-        <button onClick={this.deleteExercise}>Delete Exercise</button>
+        <button onClick={this.destroyExercise}>Delete Exercise</button>
         <Link to={`/exercises/${this.props.match.params.id}/edit`}></Link>
         <Link to='/exercises'>Back to exercise logs</Link>
       </div>
