@@ -40,12 +40,12 @@ class CreateExercise extends Component {
       url: `${apiUrl}/exercises`,
       method: 'POST',
 
-      data: { exercise: this.state.event },
+      data: { exercise: this.state.exercise },
       headers: {
         'Authorization': `Token token=${this.state.user.token}`
       }
     })
-      .then(res => this.setState({ createdId: res.data.event._id }))
+      .then(res => this.setState({ createdId: res.data.exercise._id }))
       .then(() => msgAlert({
         heading: 'Exercise Logged!',
         message: messages.createExerciseSuccess,

@@ -15,7 +15,7 @@ class Exercises extends Component {
   componentDidMount () {
     axios({
       url: `${apiUrl}/userexercises`,
-      method: 'POST',
+      method: 'GET',
       headers: {
         'Authorization': `Token token=${this.state.user.token}`
       },
