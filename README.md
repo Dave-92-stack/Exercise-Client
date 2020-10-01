@@ -12,7 +12,7 @@ and track overall fitness.
   1) Fork and clone this repository.
   2) Create and checkout into a new branch
   3) Install dependencies with `npm install`
-  4) Run local server with npm start.
+  4) Run local server with `npm start`.
 
 ## Application Screenshot
 
