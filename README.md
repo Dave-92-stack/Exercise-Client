@@ -9,7 +9,7 @@ and track overall fitness.
 
 ## Application Screenshot
 
-![alt text](https://imgur.com/9lO5pmC "Adding a workout")
+![alt text](https://i.imgur.com/9lO5pmC.png "Adding a workout")
 
 ---------
 
