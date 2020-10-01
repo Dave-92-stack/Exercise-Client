@@ -7,6 +7,13 @@ and track overall fitness.
 
 --------
 
+## Set up and Installation for Client
+
+  1) Fork and clone this repository.
+  2) Create and checkout into a new branch
+  3) Install dependencies with `npm install`
+  4) Run local server with npm start.
+
 ## Application Screenshot
 
 ![alt text](https://i.imgur.com/9lO5pmC.png "Adding a workout")
